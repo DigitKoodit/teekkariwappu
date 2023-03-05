@@ -7,7 +7,7 @@ module.exports = {
     // User Model
     const User = require('./models/User');
 
-    User.find({ username: process.env.ADMIN_USERNAME }).exec(function (err, docs) {
+    User.find({ username: process.env.ADMIN_USERNAME }).then(docs => {
       if (docs.length) {
         console.log(process.env.ADMIN_USERNAME + " already exists in db!")
       } else {

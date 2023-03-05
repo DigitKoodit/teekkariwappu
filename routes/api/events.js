@@ -57,7 +57,7 @@ router.post('/', auth, (req, res) => {
 // @access  Private
 router.delete('/:id', auth, (req, res) => {
   Event.findById(req.params.id)
-    .then(event => event.remove().then(() => res.json({ success: true, msg: "Tapahtuman poistaminen onnistui" })))
+    .then(event => event.deleteOne().then(() => res.json({ success: true, msg: "Tapahtuman poistaminen onnistui" })))
     .catch(err => res.status(404).json({ success: false, msg: "Tapahtuman poistaminen ei onnistunut" }));
 });
 
