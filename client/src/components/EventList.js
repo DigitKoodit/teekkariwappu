@@ -81,10 +81,10 @@ class EventList extends Component {
       <Container className="my-5 pt-5 eventlist-container">
         {window.location.href.indexOf("/admin") === -1 && (
           <>
-            <h3 className="text-center my-3">Ohjeet</h3>
+            <h3 className="text-center my-3">Lisätietoa Turun Teekkariwapusta tulossa pian!</h3>
             <Row>
               <Col sm={12} className="ohje-container">
-                <p>Hauskaa Wappua eli Wapundeerusta!</p>
+                {/* <p>Hauskaa Wappua eli Wapundeerusta!</p>
                 <p>
                   Tältä sivulta löydät kaikki tarvittavat tiedot vuoden 2022
                   Teekkariwapusta ja siitä kunnialla selviämiseen. Wappu
@@ -129,7 +129,7 @@ class EventList extends Component {
                   <br /> - Kaikista wapputapahtumista Mobile Paylla.
                 </p>
                 <p>Loistokasta Wappua toivottaa, Wapputoimikunta</p>
-                <p>Wappu-fakta: Tämä teksti sisältää wappu-sanan 26 kertaa.</p>
+                <p>Wappu-fakta: Tämä teksti sisältää wappu-sanan 26 kertaa.</p> */}
                 {/* <p>
                   Perinteiseen tapaan tästäkin Wapusta saa Wappuputkimerkkejä tapahtumiin osallistumalla. Seuraa itse osallistumistasi, ja kerro siitä Wapun jälkeen Digitin tai Nucleuksen hallituslaiselle saadaksesi merkit. Merkkien määrä riippuu osallistumistasi tapahtumissa seuraavasti:
                 </p>

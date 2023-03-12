@@ -7,13 +7,13 @@ class VideoComponent extends Component {
       <div className="video-component-container py-5">
         <Container>
           <div className="wappuvideo-container">
-            <iframe
+            {/* <iframe
               src="https://www.youtube.com/embed/UNLPQWieA2k"
               title="Wappuvideo"
               className="wappuvideo"
-              frameBorder="0"
               allowFullScreen
-            ></iframe>
+            ></iframe> */}
+            <h3 className="text-center my-4">Vuoden 2023 Wappuvideo: Tulossa pian!</h3>
           </div>
         </Container>
       </div>
