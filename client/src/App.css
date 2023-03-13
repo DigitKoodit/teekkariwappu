@@ -151,8 +151,7 @@ a:hover,
   height: 0;
   overflow: hidden;
   max-width: 100%;
-  /* padding-bottom: 56.25%; */
-  padding-bottom: 7.5%;
+  padding-bottom: 56.25%;
 }
 
 .wappuvideo {
