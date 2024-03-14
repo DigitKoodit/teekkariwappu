@@ -89,8 +89,8 @@ class EventList extends Component {
             <Row>
               <Col sm={12} className="ohje-container">
                 <p>
-                  Tältä sivulta löydät kaikki tarvittavat tiedot vuoden 2023 Teekkariwapusta ja siitä
-                  kunnialla selviämiseen. Wappu pärähtää käyntiin 12.4. Pönkelijulkkareilla ja
+                  Tältä sivulta löydät kaikki tarvittavat tiedot vuoden 2024 Teekkariwapusta ja siitä
+                  kunnialla selviämiseen. Wappu pärähtää käyntiin 10.4. Pönkelijulkkareilla ja
                   Wapunaloitusbileillä ja jatkuu läpi huhtikuun aina Wapunpäivään 1.5. asti.
                   Wapunajan jokaiselle päivälle on luvassa monipuolista ohjelmaa aina vuoden
                   railakkaimmista sitseistä terapeuttisiin hyvinvointipäiviin.
@@ -104,10 +104,6 @@ class EventList extends Component {
                     href="https://t.me/+Q0-r0uzlZollM2M0"
                   >
                     https://t.me/+Q0-r0uzlZollM2M0
-                  </a>
-                  <br /> Wappu-Discord:{" "}
-                  <a class="link-highlight" href="https://discord.gg/3A9QCEM6es">
-                    https://discord.gg/3A9QCEM6es
                   </a>
                 </p>
                 <p>
@@ -123,8 +119,8 @@ class EventList extends Component {
                 <p>
                   6 leimaa: 1 merkki <br />
                   10 leimaa: 2 merkkiä <br />
-                  14 leimaa: 3 merkkiä <br />
-                  18 leimaa: 4 merkkiä <br />
+                  15 leimaa: 3 merkkiä <br />
+                  20 leimaa: 4 merkkiä <br />
                 </p>
                 <p>
                   Wappupassin saa hankittua itselleen 5€ hintaan kalastajahattuisilta
