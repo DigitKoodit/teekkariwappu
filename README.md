@@ -2,6 +2,11 @@
 
 > Teekkariwappu.fi, wappu app built with the MERN stack along with Redux for state management and Reactstrap.
 
+# Relevant info
+We tried to set this up to AWS 14-15.03.2024, but the project seems to be only startable in dev mode. This repo works in Heroku and apparently the mentioned after start script does some magic that enables it to work in that enviroment. We gave up and threw it back in Heroku. Rewrite when?
+
+The problem with self hosted solution was 1. Either you get type errors from responses being undefined => Maybe frontend is not connecting to backend correctly? 2. Running in dev mode you run into "Invalid Host header" errors as dev builds should only be accessed from local envrionment. We were unable to get around this with the projects current configuration. 
+
 ## Quick Start
 
 Add   
