@@ -26,16 +26,23 @@ class Header extends Component {
                 </b>
                 ,
                 <b>
-                  <a href="https://www.facebook.com/MateriaalitekniikankiltaAdamasry">
+                  <a href="https://www.adamas.fi/">
                     {" "}
                     Adamas
                   </a>
                 </b>
                 ,
                 <b>
-                  <a href="https://www.facebook.com/KonetekniikkaMachinary/">
+                  <a href="https://machina.fi/">
                     {" "}
                     Machina{" "}
+                  </a>
+                </b>
+                ,
+                <b>
+                  <a href="https://asklepio.fi/">
+                    {" "}
+                    Asklepio{" "}
                   </a>
                 </b>
                 &
@@ -52,7 +59,9 @@ class Header extends Component {
                         Teekkarikomissio
                       </a>
                     </b>
-                    ,<b> 37</b>,
+                    ,<b>
+                    <a href="https://kolmeseiska.fi/"> 37</a> 
+                    </b>,
                     <b>
                       <a href="https://www.tio.fi/"> TIO</a>
                     </b>
@@ -60,11 +69,26 @@ class Header extends Component {
                     <b>
                       <a href="https://tykry.fi/"> TYKry </a>
                     </b>
-                    &
+                    ,
                     <b>
                       <a href="https://www.beerpongturku.fi/">
                         {" "}
                         Beer Pong Turku
+                      </a>
+                    </b>
+                    ,
+                    <b>
+                      <a href="https://www.hybridi.fi/">
+                        {" "}
+                        Hybridi
+                        {" "}
+                      </a>
+                    </b>
+                    &
+                    <b>
+                      <a href="https://pönkeli.fi/">
+                        {" "}
+                        Pönkeli
                       </a>
                     </b>
                   </p>

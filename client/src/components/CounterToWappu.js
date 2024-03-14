@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getEvents } from '../actions/eventActions';
-import Countdown from 'react-countdown-now';
+import Countdown from 'react-countdown';
 import { Row, Col } from 'reactstrap';
 
 

@@ -9,7 +9,6 @@ class MainView extends Component {
         return (
             <div>
                 <Header/>
-                <VideoComponent />
                 <EventList />
                 <Footer />
             </div>

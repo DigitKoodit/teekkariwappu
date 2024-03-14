@@ -28,7 +28,6 @@ const db = config.get('mongoURI');
 mongoose
   .connect(db, {
     useNewUrlParser: true,
-    useCreateIndex: true,
     useUnifiedTopology: true,
   }) // Adding new mongo url parser
   .then(() => console.log('MongoDB Connected...'))
@@ -54,6 +53,6 @@ if (process.env.NODE_ENV === 'production') {
 const port = process.env.PORT || 5000;
 
 //create user
-// dataInitializer.createUser();
+dataInitializer.createUser();
 
 app.listen(port, () => console.log(`Server started on port ${port}`));

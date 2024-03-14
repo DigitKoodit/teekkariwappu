@@ -119,6 +119,25 @@ a:hover,
   text-transform: uppercase;
 }
 
+.language-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: text-bottom;
+  /* height: 2px; */
+}
+
+.language-left-text {
+  float: left;
+  margin-right: 25px;
+  font-size: 32px;
+}
+
+.language-toggle {
+  transform: scale(2);
+  margin-left: 25px;
+}
+
 .medium-font {
   font-size: 2rem;
 }

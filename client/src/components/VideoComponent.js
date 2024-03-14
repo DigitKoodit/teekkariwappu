@@ -8,10 +8,9 @@ class VideoComponent extends Component {
         <Container>
           <div className="wappuvideo-container">
             <iframe
-              src="https://www.youtube.com/embed/UNLPQWieA2k"
+              src="https://www.youtube.com/embed/fcLDQUBsRlQ"
               title="Wappuvideo"
               className="wappuvideo"
-              frameBorder="0"
               allowFullScreen
             ></iframe>
           </div>

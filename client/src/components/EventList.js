@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { getEvents } from "../actions/eventActions";
 import { Container } from "reactstrap";
 import EventListItem from "./EventListItem";
-import { Row, Col, Button } from "reactstrap";
+import { Row, Col, Form, FormGroup, Label, CustomInput } from "reactstrap";
 
 class EventList extends Component {
   constructor(props) {
@@ -81,74 +81,54 @@ class EventList extends Component {
       <Container className="my-5 pt-5 eventlist-container">
         {window.location.href.indexOf("/admin") === -1 && (
           <>
-            <h3 className="text-center my-3">Ohjeet</h3>
+            {/* <div class="language-div">
+              <div class="language-left-text">Fix</div>
+              <CustomInput className="language-toggle" type="switch" label="in_progress" id="in_progress" />
+            </div> */}
+            <h3 className="text-center my-3">Hauskaa Wappua eli Wapundeerusta!</h3>
             <Row>
               <Col sm={12} className="ohje-container">
-                <p>Hauskaa Wappua eli Wapundeerusta!</p>
                 <p>
-                  Tältä sivulta löydät kaikki tarvittavat tiedot vuoden 2022
-                  Teekkariwapusta ja siitä kunnialla selviämiseen. Wappu
-                  pärähtää käyntiin 13.4. Wappulehden julkaisulla ja
-                  Wapunaloitusbileillä ja jatkuu läpi huhtikuun aina
-                  Wapunpäivään 1.5. asti. Wapunajan jokaiselle päivälle on
-                  luvassa monipuolista ohjelmaa aina vuoden railakkaimmista
-                  sitseistä terapeuttisiin hyvinvointipäiviin.
+                  Tältä sivulta löydät kaikki tarvittavat tiedot vuoden 2024 Teekkariwapusta ja siitä
+                  kunnialla selviämiseen. Wappu pärähtää käyntiin 10.4. Pönkelijulkkareilla ja
+                  Wapunaloitusbileillä ja jatkuu läpi huhtikuun aina Wapunpäivään 1.5. asti.
+                  Wapunajan jokaiselle päivälle on luvassa monipuolista ohjelmaa aina vuoden
+                  railakkaimmista sitseistä terapeuttisiin hyvinvointipäiviin.
                 </p>
                 <p>
-                  Tämän sivun lisäksi Tapahtumista jaetaan myös ajankohtaista
-                  tietoa Telegramissa ja Discordissa, joihin kannattaa
-                  ehdottomasti liittyä.
+                  Tämän sivun lisäksi tapahtumista jaetaan myös ajankohtaista tietoa Telegramissa
+                  ja Discordissa, ja näihin kanaviin kannattaa ehdottomasti liittyä samantien.
                   <br /> Wappu-Telegram:{" "}
                   <a
                     class="link-highlight"
-                    href="https://t.me/+Vt7YjxTtbZ40NGFk"
+                    href="https://t.me/+Q0-r0uzlZollM2M0"
                   >
-                    https://t.me/+Vt7YjxTtbZ40NGFk
-                  </a>
-                  <br /> Wappu-Discord:{" "}
-                  <a class="link-highlight" href="https://discord.gg/rZmqPHC2CA">
-                    https://discord.gg/rZmqPHC2CA
+                    https://t.me/+Q0-r0uzlZollM2M0
                   </a>
                 </p>
                 <p>
-                  Wapun aikana käytössä on perinteinen Wappupassi, johon passin
-                  haltija voi kerätä leimoja wapputapahtumista hattupäisiltä
-                  Wappukomissaareilta. Täytettyä passia vastaan saa lunastettu
-                  itselleen Wappuputki-haalarimerkkejä 1.5. pidettävältä
-                  Vappupikinikiltä ja Wapun jälkeen Digit ry:n hallituslaisilta.
-                  Mitä enemmän tapahtumaleimoja keräät, sitä enemmän Wappuputkia
-                  ansaitset eli passia kannattaa höylätä ahkerasti! Wappuputkia
-                  voi ansaita maksimissaan 4 kpl ja tähän vaaditaan 17
-                  tapahtumaleimaa.
+                  Wapun aikana käytössä on perinteinen Wappupassi, johon passin haltija voi kerätä
+                  leimoja wapputapahtumista hattupäisiltä Wappukomissaareilta. Täytettyä passia
+                  vastaan saa lunastettua itselleen Wappuputki-haalarimerkkejä 1.5. pidettävältä
+                  Wappupiknikiltä ja kasteessa. Mitä enemmän tapahtumaleimoja keräät, sitä enemmän
+                  Wappuputkia ansaitset eli passia kannattaa höylätä ahkerasti!
                 </p>
                 <p>
-                  Wappupassin saa hankittua itselleen 6€ hintaan
-                  värikäshattuisilta Wappukomissaareilta seuraavilla tavoilla:
-                  <br /> - Wapunaloitusbilesitä 13.4. Mobile payllä ja
-                  käteisellä.
-                  <br /> - Kaikista wapputapahtumista Mobile Paylla.
-                </p>
-                <p>Loistokasta Wappua toivottaa, Wapputoimikunta</p>
-                <p>Wappu-fakta: Tämä teksti sisältää wappu-sanan 26 kertaa.</p>
-                {/* <p>
-                  Perinteiseen tapaan tästäkin Wapusta saa Wappuputkimerkkejä tapahtumiin osallistumalla. Seuraa itse osallistumistasi, ja kerro siitä Wapun jälkeen Digitin tai Nucleuksen hallituslaiselle saadaksesi merkit. Merkkien määrä riippuu osallistumistasi tapahtumissa seuraavasti:
+                  Wappuputki-merkkejä voi ansaita seuraavanlaisesti:
                 </p>
                 <p>
-                  3 tapahtumaa 1 merkki <br />
-                  6 tapahtumaa 2 merkkiä <br />
-                  9 tapahtumaa 3 merkkiä <br />
-                  12 tapahtumaa 4 merkkiä <br />
+                  6 leimaa: 1 merkki <br />
+                  10 leimaa: 2 merkkiä <br />
+                  15 leimaa: 3 merkkiä <br />
+                  20 leimaa: 4 merkkiä <br />
                 </p>
                 <p>
-                  Tapahtumien osallistujalistoja seurataan, joten olethan rehellinen noutaessasi merkkejä.
+                  Wappupassin saa hankittua itselleen 5€ hintaan kalastajahattuisilta
+                  Wappukomissaareilta kaikissa wapputapahtumissa MobilePayllä.
                 </p>
-                <p>
-                  Wapun viettäjille tehdään oma Discord-kanava, jota käytämme eri tapahtumiin ja viestintään. Wappu-Discordia käytetään myös päiväkohtaisten haasteiden taltiointiin.
-                </p>
-                <p>
-                  Koko Wapun ajan on käynnissä Wappuseikkailu. Seikkailuun kuuluu erilaisia rasteja, joiden avulla pääsee kulkemaan ympäri Turkua ja ratkaisemaan kiperiä pulmia ja visaisia vinkkejä. Wappuseikkailua voi suorittaa täysin omaan tahtiin koko Wapun ajan yksin tai maksimissaan 4 hengen ryhmissä.
-                </p>
-                <Button className="discord-button" onClick={() => window.location.href='https://discord.gg/hwWHsf8Wnn'}>Wappu-Discordiin pääset tästä!</Button> */}
+                <p>Loistokasta Wappua toivottaa,</p>
+                <p>Wapputoimikunta</p>
+
               </Col>
             </Row>
           </>
