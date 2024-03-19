@@ -97,13 +97,14 @@ class EventList extends Component {
                 </p>
                 <p>
                   Tämän sivun lisäksi tapahtumista jaetaan myös ajankohtaista tietoa Telegramissa
-                  ja Discordissa, ja näihin kanaviin kannattaa ehdottomasti liittyä samantien.
+                  ja Instagramissa, ja näihin kanaviin kannattaa ehdottomasti liittyä samantien.
                   <br /> Wappu-Telegram:{" "}
-                  <a
-                    class="link-highlight"
-                    href="https://t.me/+Q0-r0uzlZollM2M0"
-                  >
-                    https://t.me/+Q0-r0uzlZollM2M0
+                  <a class="link-highlight" href="https://t.me/+Q0-r0uzlZollM2M0">
+                    https://t.me/+Q0-r0uzlZollM2M0/
+                  </a>
+                  <br /> Wappu-Instagram:{" "}
+                  <a class="link-highlight" href="https://instagram.com/teekkariwappu/" >
+                     https://instagram.com/teekkariwappu/
                   </a>
                 </p>
                 <p>
