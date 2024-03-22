@@ -75,11 +75,15 @@ class Header extends Component {
                     </b>
                     ,
                     <b>
-                      <a href="https://pönkeli.fi/"> Pönkeli </a>
+                      <a href="https://pönkeli.fi/"> Pönkeli</a>
+                    </b>
+                    ,
+                    <b>
+                      <a href="https://technica.fi/"> Technica ry </a>
                     </b>
                     &
                     <b>
-                      <a href="https://technica.fi/"> Technica ry</a>
+                      <a href="https://www.tek.fi/fi"> TEK</a>
                     </b>
                   </p>
                 </span>

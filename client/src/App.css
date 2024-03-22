@@ -298,8 +298,8 @@ a:hover,
 }
 @media screen and (min-width: 768px){
   .header-bg {
-    top: 25% !important;
-    max-height: 50% !important;
+    top: 15% !important;
+    max-height: 70% !important;
   }
 }
 
