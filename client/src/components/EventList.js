@@ -129,7 +129,26 @@ class EventList extends Component {
                 </p>
                 <p>Loistokasta Wappua toivottaa,</p>
                 <p>Wapputoimikunta</p>
-
+              </Col>
+            </Row>
+            <h3 className="text-center my-3">Ongelmatilannelomake</h3>
+            <Row>
+              <Col sm={12} className="harassment-form-container">
+                <p>
+                  Teekkariwapun tapahtumissa noudatetaan TYYn turvallisen tilan periaatteita. 
+                  Nämä ovat luettavissa osoitteessa <a class="link-highlight" 
+                  href="https://www.tyy.fi/fi/node/11133">https://www.tyy.fi/fi/node/11133</a>. 
+                  Tällä lomakkeella voit ilmoittaa Teekkariwapun aikana kokemastasi häirinnästä, kiusaamisesta, 
+                  ahdistelusta tai muusta yhdenvertaisuuden toteutumiseen liittyvästä ongelmasta. 
+                  Teekkariwapun häirintäyhdyshenkilö vastaavat sekä wappukeisari käsittelevät lomakkeet 
+                  luottamuksellisesti.
+                </p>
+                <p>
+                  Ongelmatilannelomake: 
+                  <a class="link-highlight" href="https://forms.gle/pfpVYou3qVMtjbpT7">
+                    https://forms.gle/pfpVYou3qVMtjbpT7
+                  </a>
+                </p>
               </Col>
             </Row>
           </>
