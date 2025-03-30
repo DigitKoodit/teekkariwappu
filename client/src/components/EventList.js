@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
+import { compose } from "redux";
+import { connect, } from "react-redux";
 import { getEvents } from "../actions/eventActions";
 import { Container } from "reactstrap";
 import EventListItem from "./EventListItem";
-import { Row, Col, Form, FormGroup, Label, CustomInput } from "reactstrap";
+import { Row, Col } from "reactstrap";
+import { withTranslation } from 'react-i18next';
 
 class EventList extends Component {
   constructor(props) {
@@ -11,6 +13,7 @@ class EventList extends Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       collapse: null,
+      
     };
   }
 
@@ -65,6 +68,8 @@ class EventList extends Component {
   render() {
     const { collapse } = this.state;
     const { events } = this.props;
+    const { t } = this.props;
+    
 
     events.sort((a, b) => new Date(a.date) - new Date(b.date));
     const pastEvents = events.filter((event) => {
@@ -89,64 +94,53 @@ class EventList extends Component {
             <Row>
               <Col sm={12} className="ohje-container">
                 <p>
-                  Tältä sivulta löydät kaikki tarvittavat tiedot vuoden 2024 Teekkariwapusta ja siitä
-                  kunnialla selviämiseen. Wappu pärähtää käyntiin 10.4. Pönkelijulkkareilla ja
-                  Wapunaloitusbileillä ja jatkuu läpi huhtikuun aina Wapunpäivään 1.5. asti.
-                  Wapunajan jokaiselle päivälle on luvassa monipuolista ohjelmaa aina vuoden
-                  railakkaimmista sitseistä terapeuttisiin hyvinvointipäiviin.
+                  {t('main-info')}
                 </p>
                 <p>
-                  Tämän sivun lisäksi tapahtumista jaetaan myös ajankohtaista tietoa Telegramissa
-                  ja Instagramissa, ja näihin kanaviin kannattaa ehdottomasti liittyä samantien.
-                  <br /> Wappu-Telegram:{" "}
-                  <a class="link-highlight" href="https://t.me/+oDPMLRSH0eJiNTU0">
-                    https://t.me/+oDPMLRSH0eJiNTU0/
+                {t('info-channels')}
+                  <br />
+                  {t('telegram-name')}:&nbsp;
+                  <a class="link-highlight" href={t('telegram-link')}>
+                  {t('telegram-link')}
                   </a>
-                  <br /> Wappu-Instagram:{" "}
-                  <a class="link-highlight" href="https://instagram.com/teekkariwappu/" >
-                     https://instagram.com/teekkariwappu/
+                  <br />
+                  {t('instagram-name')}:&nbsp;
+                  <a class="link-highlight" href={t('instagram-link')} >
+                    {t('instagram-link')}
                   </a>
                 </p>
                 <p>
-                  Wapun aikana käytössä on perinteinen Wappupassi, johon passin haltija voi kerätä
-                  leimoja wapputapahtumista hattupäisiltä Wappukomissaareilta. Täytettyä passia
-                  vastaan saa lunastettua itselleen Wappuputki-haalarimerkkejä 1.5. pidettävältä
-                  Wappupiknikiltä ja kasteessa. Mitä enemmän tapahtumaleimoja keräät, sitä enemmän
-                  Wappuputkia ansaitset eli passia kannattaa höylätä ahkerasti!
+                  {t('wappupassi-info')}
                 </p>
                 <p>
-                  Wappuputki-merkkejä voi ansaita seuraavanlaisesti:
+                  {t('wappuputki-text')}
                 </p>
                 <p>
-                  6 leimaa: 1 merkki <br />
-                  10 leimaa: 2 merkkiä <br />
-                  15 leimaa: 3 merkkiä <br />
-                  20 leimaa: 4 merkkiä <br />
+                {t('wappuputki-one')}
+                {t('wappuputki-two')}
+                {t('wappuputki-three')}
+                {t('wappuputki-four')}
                 </p>
                 <p>
-                  Wappupassin saa hankittua itselleen 5€ hintaan kalastajahattuisilta
-                  Wappukomissaareilta kaikissa wapputapahtumissa MobilePayllä.
+                  {t('wappupassi-price')}
                 </p>
-                <p>Loistokasta Wappua toivottaa,</p>
-                <p>Wapputoimikunta</p>
+                <p>{t('wappu-greetings')}</p>
               </Col>
             </Row>
             <h3 className="text-center my-3">Ongelmatilannelomake</h3>
             <Row>
               <Col sm={12} className="harassment-form-container">
                 <p>
-                  Teekkariwapun tapahtumissa noudatetaan TYYn turvallisen tilan periaatteita. 
-                  Nämä ovat luettavissa osoitteessa{" "}<a class="link-highlight" 
-                  href="https://www.tyy.fi/fi/node/11133">https://www.tyy.fi/fi/node/11133</a>. 
-                  Tällä lomakkeella voit ilmoittaa Teekkariwapun aikana kokemastasi häirinnästä, kiusaamisesta, 
-                  ahdistelusta tai muusta yhdenvertaisuuden toteutumiseen liittyvästä ongelmasta. 
-                  Teekkariwapun häirintäyhdyshenkilö vastaavat sekä wappukeisari käsittelevät lomakkeet 
-                  luottamuksellisesti.
+                {t('problematic-situations-info')}&nbsp;
+                <a class="link-highlight" href={t('problematic-situations-info-link')}>
+                  {t('problematic-situations-info-link')}
+                </a>
+                {t('problematic-situations-info2')}
                 </p>
                 <p>
-                  Ongelmatilannelomake:{" "}
-                  <a class="link-highlight" href="https://forms.gle/pfpVYou3qVMtjbpT7">
-                    https://forms.gle/pfpVYou3qVMtjbpT7
+                  {t('problematic-situations-form-text')}:{" "}
+                  <a class="link-highlight" href={t('problematic-situations-form')}>
+                    {t('problematic-situations-form')}
                   </a>
                 </p>
               </Col>
@@ -154,10 +148,10 @@ class EventList extends Component {
           </>
         )}
         {events.length === 0 && (
-          <h3 className="text-center my-3">Ei tapahtumia!</h3>
+          <h3 className="text-center my-3">{t('no-events')}</h3>
         )}
         {currentEvents.length > 0 && (
-          <h3 className="text-center my-3">Tapahtuma(t) tänään</h3>
+          <h3 className="text-center my-3">{t('events-today')}</h3>
         )}
         {currentEvents.length > 0 &&
           currentEvents.map((event) => (
@@ -169,7 +163,7 @@ class EventList extends Component {
             />
           ))}
         {futureEvents.length > 0 && (
-          <h3 className="text-center my-3">Tulevat tapahtumat</h3>
+          <h3 className="text-center my-3">{t('upcoming-events')}</h3>
         )}
         {futureEvents.length > 0 &&
           futureEvents.map((event) => (
@@ -181,7 +175,7 @@ class EventList extends Component {
             />
           ))}
         {pastEvents.length > 0 && (
-          <h3 className="text-center my-3">Menneet tapahtumat</h3>
+          <h3 className="text-center my-3">{t('past-events')}</h3>
         )}
         {pastEvents.length > 0 &&
           pastEvents.map((event) => (
@@ -202,4 +196,7 @@ const mapStateToProps = (state) => ({
   events: state.event.events,
 });
 
-export default connect(mapStateToProps, { getEvents })(EventList);
+export default compose(
+  connect(mapStateToProps, { getEvents }),
+  withTranslation()
+)(EventList);
