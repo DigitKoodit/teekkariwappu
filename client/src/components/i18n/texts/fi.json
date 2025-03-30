@@ -1,4 +1,5 @@
 {
+    "wappu-greetings": "Hauskaa Wappua eli Wapundeerusta!",
     "main-info": "Tältä sivulta löydät kaikki tarvittavat tiedot vuoden 2025 Teekkariwapusta ja siitä kunnialla selviämiseen. Wappu pärähtää käyntiin X.4. Pönkelijulkkareilla ja Wapunaloitusbileillä ja jatkuu läpi huhtikuun aina Wapunpäivään 1.5. asti. Wapunajan jokaiselle päivälle on luvassa monipuolista ohjelmaa aina vuoden railakkaimmista sitseistä terapeuttisiin hyvinvointipäiviin.",
     "info-channels": "Tämän sivun lisäksi tapahtumista jaetaan myös ajankohtaista tietoa Telegramissa ja Instagramissa, ja näihin kanaviin kannattaa ehdottomasti liittyä samantien.",
     "telegram-name": "Wappu-Telegram",
@@ -12,7 +13,8 @@
     "wappuputki-three": "X leimaa: 3 merkkiä\n",
     "wappuputki-four": "X leimaa: 4 merkkiä\n",
     "wappupassi-price": "Wappupassin saa hankittua itselleen 5€ hintaan kalastajahattuisilta Wappukomissaareilta kaikissa wapputapahtumissa MobilePayllä.",
-    "wappu-greetings": "Loistokasta Wappua toivottaa,\nWapputoimikunta",
+    "wapputoimikunta-regards": "Loistokasta Wappua toivottaa,\nWapputoimikunta",
+    "problematic-situations-header": "Ongelmatilannelomake",
     "problematic-situations-info": "Teekkariwapun tapahtumissa noudatetaan TYYn turvallisen tilan periaatteita. Nämä ovat luettavissa osoitteessa",
     "problematic-situations-info-link": "https://www.tyy.fi/fi/node/11133",
     "problematic-situations-info2": "Tällä lomakkeella voit ilmoittaa Teekkariwapun aikana kokemastasi häirinnästä, kiusaamisesta, ahdistelusta tai muusta yhdenvertaisuuden toteutumiseen liittyvästä ongelmasta. Teekkariwapun häirintäyhdyshenkilö vastaavat sekä wappukeisari käsittelevät lomakkeet luottamuksellisesti.",

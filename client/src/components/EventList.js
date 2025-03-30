@@ -90,7 +90,7 @@ class EventList extends Component {
               <div class="language-left-text">Fix</div>
               <CustomInput className="language-toggle" type="switch" label="in_progress" id="in_progress" />
             </div> */}
-            <h3 className="text-center my-3">Hauskaa Wappua eli Wapundeerusta!</h3>
+            <h3 className="text-center my-3">{t('wappu-greetings')}</h3>
             <Row>
               <Col sm={12} className="ohje-container">
                 <p>
@@ -127,7 +127,7 @@ class EventList extends Component {
                 <p>{t('wappu-greetings')}</p>
               </Col>
             </Row>
-            <h3 className="text-center my-3">Ongelmatilannelomake</h3>
+            <h3 className="text-center my-3">{t('problematic-situations-header')}</h3>
             <Row>
               <Col sm={12} className="harassment-form-container">
                 <p>
