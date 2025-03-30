@@ -23,12 +23,16 @@ jobs:
         with:
           node-version: '22.x'
 
-      - name: npm install and build
-        run: |
-          npm install
-          NPM_CONFIG_PRODUCTION=false npm install --prefix client
-          npm run build --prefix client
+      - name: install server
+        run: npm install
 
+      - name: install client
+        run: NPM_CONFIG_PRODUCTION=false npm install --prefix client
+
+      - name: build client
+        run: npm run build --prefix client
+        env:
+          CI: ""
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
@@ -63,3 +67,5 @@ jobs:
           slot-name: 'Production'
           package: .
           publish-profile: ${{ secrets.TEEKKARIWAPPU_PUBLISH_PROFILE }}
+          clean: true
+          restart: true
