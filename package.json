@@ -11,7 +11,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "author": "Aleksi Väisänen",
+  "contributors": ["Aleksi Väisänen","Arttu Huttunen","Tommi Immonen"],
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -22,9 +22,7 @@
     "express-force-https": "^1.0.0",
     "helmet": "^3.21.2",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.0.0",
-    "react-countdown": "2.2.2",
-    "react-router-dom": "^5.1.2"
+    "mongoose": "^7.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
