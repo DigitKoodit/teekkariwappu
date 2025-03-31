@@ -124,7 +124,12 @@ class EventList extends Component {
                 <p>
                   {t('wappupassi-price')}
                 </p>
-                <p>{t('wappu-greetings')}</p>
+                <p>
+                  {t('wappukomissaari-hats-info')}
+                </p>
+                <p>
+                  {t('wappu-regards')}
+                </p>
               </Col>
             </Row>
             <h3 className="text-center my-3">{t('problematic-situations-header')}</h3>
@@ -132,13 +137,14 @@ class EventList extends Component {
               <Col sm={12} className="harassment-form-container">
                 <p>
                 {t('problematic-situations-info')}&nbsp;
+                <br/>
                 <a class="link-highlight" href={t('problematic-situations-info-link')}>
                   {t('problematic-situations-info-link')}
-                </a>
+                </a>.&nbsp;
                 {t('problematic-situations-info2')}
                 </p>
                 <p>
-                  {t('problematic-situations-form-text')}:{" "}
+                  {t('problematic-situations-form-text')}:&nbsp;
                   <a class="link-highlight" href={t('problematic-situations-form')}>
                     {t('problematic-situations-form')}
                   </a>

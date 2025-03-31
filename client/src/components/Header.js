@@ -39,11 +39,19 @@ class Header extends Component {
                 </b>
                 ,
                 <b>
-                  <a href="https://www.asteriski.fi/"> Asteriski </a>
+                  <a href="https://www.asteriski.fi/"> Asteriski</a>
+                </b>
+                ,
+                <b>
+                  <a href="https://optimary.fi/"> Optima</a>
+                </b>
+                ,
+                <b>
+                  <a href="https://www.instagram.com/efficio.ry/"> Efficio </a>
                 </b>
                 &
                 <b>
-                  <a href="https://instagram.com/optima.ry/"> Optima</a>
+                  <a href="https://www.instagram.com/fermentus.ry/"> Fermentus</a>
                 </b>
                 <br />
                 <br />
@@ -64,6 +72,10 @@ class Header extends Component {
                     ,
                     <b>
                       <a href="https://tykry.fi/"> TYKry</a>
+                    </b>
+                    ,
+                    <b>
+                      <a href="https://aurasoudut.fi/"> Aurasoudut</a>
                     </b>
                     ,
                     <b>

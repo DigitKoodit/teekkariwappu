@@ -6,6 +6,8 @@ import machina from '../images/machina.png';
 import adamas from '../images/adamas.png';
 import asklepio from '../images/asklepio.png';
 import optima from '../images/optima.png';
+import fermentus from '../images/fermentus.png';
+import efficio from '../images/efficio.png';
 import asteriski from '../images/asteriski.png';
 import fb from '../images/fb_logo.png';
 import ig from '../images/ig_logo.png';
@@ -153,15 +155,47 @@ class Footer extends Component {
             </Col>
           </Row>
           <Row style={{ margin: '10px -15px' }}>
-            <Col style={{ margin: '0 -15px' }}
-                  md={6} className="d-flex flex-row justify-content-center align-items-start">
+            <Col md={6} className="d-flex flex-row justify-content-center align-items-start">
               <div style={{ minWidth: '150px', display: 'flex', justifyContent: 'center' }}>
-                  <img className="guild-logo-without-margin" src={optima} alt="Optima ry" />
+                <img className="guild-logo-without-margin" src={optima} alt="Optima ry" />
               </div>
-              <div className="d-flex flex-row justify-content-left align-items-center">
-                <a href="https://instagram.com/optima.ry/" className="social-media-link">
-                  <img className="social-media" src={ig} alt="Optima ry Instagram" /> @optima.ry
-                </a>
+              <div className="d-flex flex-column justify-content-left" style={{ width: '170px' }}>
+                <div className="d-flex flex-row justify-content-left align-items-center">
+                  <a href="https://www.instagram.com/optima.ry/" className="social-media-link">
+                    <img className="social-media" src={ig} alt="Optima ry Instagram" /> @optima.ry
+                  </a>
+                </div>
+                <div className="d-flex flex-row justify-content-left align-items-center">
+                  <a href="https://optimary.fi/" className="social-media-link">
+                    <img className="social-media" src={www} alt="optimary.fi" /> optimary.fi
+                  </a>
+                </div>
+              </div>
+            </Col>
+            <Col md={6} className="d-flex flex-row justify-content-center align-items-start">
+              <div style={{ minWidth: '150px', display: 'flex', justifyContent: 'center' }}>
+                <img className="guild-logo-without-margin" src={efficio} alt="Efficio ry" />
+              </div>
+              <div className="d-flex flex-column justify-content-left" style={{ width: '170px' }}>
+                <div className="d-flex flex-row justify-content-left align-items-center">
+                  <a href="https://www.instagram.com/efficio.ry/" className="social-media-link">
+                    <img className="social-media" src={ig} alt="Efficio ry Instagram" /> @efficio.ry
+                  </a>
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row style={{ margin: '10px -15px' }}>
+            <Col md={6} className="d-flex flex-row justify-content-center align-items-start">
+              <div style={{ minWidth: '150px', display: 'flex', justifyContent: 'center' }}>
+                <img className="guild-logo-without-margin" src={fermentus} alt="Fermentus ry" />
+              </div>
+              <div className="d-flex flex-column justify-content-left" style={{ width: '170px' }}>
+                <div className="d-flex flex-row justify-content-left align-items-center">
+                  <a href="https://www.instagram.com/fermentus.ry/" className="social-media-link">
+                    <img className="social-media" src={ig} alt="Fermentus ry Instagram" /> @fermentus.ry
+                  </a>
+                </div>
               </div>
             </Col>
           </Row>
