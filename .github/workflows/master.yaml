@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '22.x'
-
+    
       - name: install server
         run: npm install
 
@@ -35,9 +35,11 @@ jobs:
           CI: ""
 
       - name: Zip artifact for deployment
+        if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message), '#skip') }}
         run: zip release.zip ./* -r
 
       - name: Upload artifact for deployment job
+        if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message), '#skip') }}
         uses: actions/upload-artifact@v4
         with:
           name: node-app
@@ -52,14 +54,17 @@ jobs:
     
     steps:
       - name: Download artifact from build job
+        if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message), '#skip') }}
         uses: actions/download-artifact@v4
         with:
           name: node-app
 
       - name: Unzip artifact for deployment
+        if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message), '#skip') }}
         run: unzip release.zip
       
       - name: 'Deploy to Azure Web App'
+        if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message), '#skip') }}
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
